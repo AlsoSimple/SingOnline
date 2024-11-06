@@ -5,15 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="ASSETS/CSS/main.css" />
-    <script src="ASSETS/JS/script.js" defer></script>
+    <script type="module" src="ASSETS/JS/main.js" defer></script>
   </head>
   <body>
-    <!-- GLOBAL HEADER -->
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">RadioCringe</div>
+        <nav class="menu">
+          <div class="menu-item active">
+            <span class="icon">🏠</span>
+            Home
+          </div>
+          <div class="menu-item">
+            <span class="icon">🔍</span>
+            Search
+          </div>
+          <div class="menu-item">
+            <span class="icon">❤️</span>
+            Favorites
+          </div>
+          <div class="menu-item">
+            <span class="icon">🎶</span>
+            Songs
+          </div>
+          <div class="menu-item">
+            <span class="icon">💿</span>
+            Albums
+          </div>
+        </nav>
+      </aside>
 
-    <!-- GLOBAL NAVIGATION -->
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <h1 class="title">Home</h1>
+          <div class="user-profile">
+            <img src="path/to/avatar.jpg" alt="User Avatar" class="avatar" />
+            <span class="username">You</span>
+          </div>
+        </header>
 
-    <!-- MAIN CONTENT -->
+        <!-- Albums Section -->
+        <section class="albums">
+          <div class="album-title">
+            <span>Albums</span>
+            <span class="see-all">See All</span>
+          </div>
+          <div class="album-list">
+            <!-- Album Item -->
+            <div class="album-item">
+              <img
+                src="path/to/album-cover.jpg"
+                alt="Album Cover"
+                class="cover"
+              />
+              <div class="name">Album Name</div>
+              <div class="singer">Singer</div>
+            </div>
+            <!-- Repeat Album Item as needed -->
+          </div>
+        </section>
 
-    <!-- GLOBAL FOOTER -->
+        <!-- Songs Section -->
+        <section class="songs">
+          <div class="song-title">
+            <span>Songs</span>
+            <span class="see-all">See All</span>
+          </div>
+          <div class="song-list">
+            <!-- Song Item -->
+            <div class="song-item">
+              <img
+                src="path/to/song-cover.jpg"
+                alt="Song Cover"
+                class="cover"
+              />
+              <div class="details">
+                <div class="song-name">Song Name</div>
+                <div class="singer">Singer</div>
+              </div>
+              <span class="favorite-icon">❤️</span>
+            </div>
+            <!-- Repeat Song Item as needed -->
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

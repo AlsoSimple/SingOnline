@@ -1,0 +1,47 @@
+@use '../utils/variables' as *;
+
+.sidebar {
+    background-color: $primaryColor;
+    color: $textColor;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .logo {
+      font-size: 1.5rem;
+      color: $activeColor;
+      margin-bottom: 2rem;
+    }
+  
+    .menu {
+      width: 100%;
+      list-style: none;
+      padding: 0;
+  
+      .menu-item {
+        font-size: 1rem;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        color: $textColor;
+        border-radius: 5px;
+        cursor: pointer;
+  
+        &.active {
+          background-color: $secondaryColor;
+          color: $activeColor;
+        }
+  
+        &:hover {
+          background-color: darken($secondaryColor, 10%);
+        }
+  
+        .icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  

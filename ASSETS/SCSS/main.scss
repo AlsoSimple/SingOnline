@@ -1,0 +1,15 @@
+// Import color variables from utils, and make them accessible globally
+@use 'utils/variables' as *;
+
+// Import global styles or resets
+@use 'components/globals';
+
+// Import each component
+@use 'components/header';
+@use 'components/footer';
+@use 'components/button';
+@use 'components/albums';
+@use 'components/songs';
+@use 'components/sidebar';
+
+

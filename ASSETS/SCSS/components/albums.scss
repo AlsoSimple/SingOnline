@@ -1,0 +1,56 @@
+@use '../utils/variables' as *;
+
+.albums {
+  margin: 20px;
+  padding: 20px;
+  background-color: $primaryColor;
+  border-radius: 15px;
+  color: $textColor;
+
+  .album-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .see-all {
+      font-size: 0.9rem;
+      color: $activeColor;
+      cursor: pointer;
+    }
+  }
+
+  .album-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+    .album-item {
+      background-color: $secondaryColor;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      min-width: 120px;
+      color: $textColor;
+
+      .cover {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+      }
+
+      .name {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      .singer {
+        font-size: 0.9rem;
+        color: lighten($textColor, 20%);
+      }
+    }
+  }
+}
